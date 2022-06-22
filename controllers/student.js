@@ -87,6 +87,7 @@ async function deleteStudent(req, res) {
 async function login(req, res) {
   try {
     const { email, password } = req.body;
+    console.log("email");
     if (!email || !password) {
       return res.status(400).send("Required fields can't be empty");
     }
