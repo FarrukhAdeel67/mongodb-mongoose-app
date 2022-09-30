@@ -4,7 +4,6 @@ const mongoose = require('mongoose');
 const app = express();
 
 app.use(express.json());
-
 const studentRouter = require('./routes/student');
 app.use("/api/students", studentRouter);
 //password is removed from connection
